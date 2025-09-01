@@ -70,6 +70,7 @@ const FROM_CURRENCY = [{ code: 'USD', label: 'US Dollar' }];
                   [selected]="getSelectedTo()"
                   (selectedChange)="onToSelected($event)"
                   placeholder="To"
+                  [position]="'right'"
                 >
                 </shadcn-dropdown>
               </div>
