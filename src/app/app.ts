@@ -1,12 +1,16 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { LucideAngularModule, FileIcon, ChevronDownIcon, HandHeartIcon } from 'lucide-angular';
+import { CurrencyConverterComponent } from './currency-converter/currency-converter';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [LucideAngularModule, CurrencyConverterComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('for-honeycoin');
+  readonly FileIcon = FileIcon;
+  readonly ChevronDownIcon = ChevronDownIcon;
+  readonly HandHeartIcon = HandHeartIcon;
 }
