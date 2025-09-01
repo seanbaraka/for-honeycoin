@@ -32,7 +32,7 @@ const FROM_CURRENCY = [{ code: 'USD', label: 'US Dollar' }];
   imports: [CommonModule, ShadcnDropdownComponent, LucideAngularModule],
   template: `
     <div class="rounded-3xl border border-gray-300 backdrop-blur p-6 md:p-8 shadow-lg">
-      <h2 class="text-4xl font-semibold mb-4">Currency Converter</h2>
+      <h2 class="md:text-4xl text-3xl font-semibold mb-4">Currency Converter</h2>
 
       <div class="flex flex-col md:flex-row md:items-start gap-6">
         <!-- form -->
@@ -98,7 +98,7 @@ const FROM_CURRENCY = [{ code: 'USD', label: 'US Dollar' }];
                 />
                 <button
                   type="button"
-                  class="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 text-xs text-gray-500 hover:text-gray-600"
+                  class="absolute bg-gray-300 font-medium h-full cursor-pointer right-0 w-12 rounded-r-xl top-1/2 -translate-y-1/2 text-xs text-gray-500 hover:text-gray-600"
                   (click)="setAmount('100')"
                 >
                   +100
@@ -133,7 +133,7 @@ const FROM_CURRENCY = [{ code: 'USD', label: 'US Dollar' }];
           </div>
         </aside> -->
       </div>
-      <div class="flex gap-1 items-center mt-8">
+      <div class="flex gap-2 md:gap-1 items-start md:items-center mt-4 md:mt-8">
         <i-lucide [img]="InfoIcon" size="16"></i-lucide>
         <span class="text-xs text-neutral-400">
           We use the mid-market rate for our Converter. This is for informational purposes only. You
